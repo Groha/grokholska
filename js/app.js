@@ -3654,11 +3654,7 @@
     function toggleScreenState(isContact) {
         const mainScreen = document.querySelector(".main");
         const contactsScreen = document.querySelector(".contacts");
-        const closeButton = document.querySelector(".contacts__button");
-        const contactButton = document.querySelector(".main__button");
         mainScreen.classList.toggle("hide", isContact);
-        contactButton.classList.toggle("hide", isContact);
-        closeButton.classList.toggle("hide", !isContact);
         contactsScreen.classList.toggle("hide", !isContact);
     }
 })();

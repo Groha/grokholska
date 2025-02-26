@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Roboto:500,&display=swap);
 /*! tailwindcss v4.0.6 | MIT License | https://tailwindcss.com */
 * {
   padding: 0;
@@ -196,7 +196,7 @@ h6 {
   transition: opacity .5s linear .8s
 }
 .contacts__content {
-  max-width: 32.5rem;
+  max-width: 17.5rem;
   height: 100svh;
   background-color: #0a4e8a;
   color: #fff;
@@ -256,6 +256,7 @@ h6 {
 }
 @media (min-width:47.99875em) {
   .contacts__content {
+    max-width: 32.5rem;
     padding-bottom: 13%
   }
   .contacts__list {
@@ -283,30 +284,34 @@ h6 {
 }
 @media (max-width:20em) {
   .main__lines {
-    height: 1.75rem
+    height: 2rem
   }
   .main__line {
-    font-size: 1.75rem
+    font-size: 2rem
   }
   .contacts__title {
-    font-size: 2rem
+    font-size: 1.375rem
   }
 }
 @media (max-width:47.99875em) {
   .main__content {
     -webkit-transform: rotate(-90deg);
-    transform: rotate(-90deg)
+    transform: rotate(-90deg);
+    width: 120vw
+  }
+  .main__lines {
+    width: 120vw
   }
 }
 @media (min-width:20em)and (max-width:75em) {
   .main__lines {
-    height: clamp(1.75rem ,.1136363636rem + 8.1818181818vw ,6.25rem)
+    height: clamp(2rem ,.4545454545rem + 7.7272727273vw ,6.25rem)
   }
   .main__line {
-    font-size: clamp(1.75rem ,.1136363636rem + 8.1818181818vw ,6.25rem)
+    font-size: clamp(2rem ,.4545454545rem + 7.7272727273vw ,6.25rem)
   }
   .contacts__title {
-    font-size: clamp(2rem ,1.8181818182rem + .9090909091vw ,2.5rem)
+    font-size: clamp(1.375rem ,.9659090909rem + 2.0454545455vw ,2.5rem)
   }
 }
 @media (min-width:47.99875em)and (min-width:20em)and (max-width:75em) {
